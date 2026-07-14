@@ -12,8 +12,54 @@
     <nav class="nav">
       <a href="entree.html">Menu</a>
       <a href="about.html">About Us</a>
-      <a href="tel:+61000000000" class="icon">📞</a>
-      <a href="#" class="icon">📘</a>
+      <a href="tel:+61296183300" class="icon">📞</a>
+      <a href="https://www.facebook.com/share/1DtodXznXB/?mibextid=wwXIfr" class="icon">📘</a>
       <a href="reservation.html" class="btn">Book with us</a>
     </nav>
   </header>
+  <main class="container">
+    <h1 class="page-title" style="text-align:center;">Make a Reservation</h1>
+    <p class="page-subtitle" style="text-align:center;">Fill in your details and we'll save you a table.</p>
+    <form class="form-card" onsubmit="return submitReservation(event)">
+      <div class="form-row">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="e.g. Ateej" required />
+      </div>
+      <div class="form-row">
+        <label for="party">Booking For</label>
+        <select id="party">
+          <option>1 person</option>
+          <option>2 people</option>
+          <option selected>3 people</option>
+          <option>4 people</option>
+          <option>5 people</option>
+          <option>6+ people</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="+61 ___ ___ ___" required />
+      </div>
+      <div class="form-row">
+        <label for="date">Booking Date</label>
+        <input type="date" id="date" required />
+      </div>
+      <div class="form-row">
+        <label for="time">Time</label>
+        <select id="time">
+          <option>12:00pm</option>
+          <option>1:00pm</option>
+          <option>5:00pm</option>
+          <option selected>6:00pm</option>
+          <option>7:00pm</option>
+          <option>8:00pm</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-red" style="width:100%;">Book With Us</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
