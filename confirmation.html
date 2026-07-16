@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curry</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo"><a href="index.html" style="color:inherit;">Betong <span>Thai</span></a></div>
+    <nav class="nav">
+      <a href="entree.html">Menu</a>
+      <a href="about.html">About Us</a>
+      <a href="tel:+61296183300" class="icon">📞</a>
+      <a href="https://www.facebook.com/share/1DtodXznXB/?mibextid=wwXIfr" class="icon">📘</a>
+      <a href="reservation.html" class="btn">Book with us</a>
+    </nav>
+  </header>
+
+  main class="container">
+  <div class="confirm-card">
+    <h2>✅ Reservation Confirmed</h2>
+    <p>Dear Ateej, your reservation is confirmed for 6:00pm on the 6th of July.</p>
+
+    <h3 style="color:var(--red);">Your order includes:</h3>
+    <ul id="order-list"></ul>
+
+    <p>If you wish to amend your order, feel free to call us or you can add items to your order in store.</p>
+
+    <div class="notice">⏰ Kindly arrive no later than 15 minutes after your reservation time.</div>
+
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+</main>
+
+      <script src="script.js" onload="fillConfirmation()"></script>
+      <script>fillConfirmation();</script>
+</body>
+</html>
