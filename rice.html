@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="topbar">
-        <div class="logo"><a href="index.html" style="color:inherit;">Betong <span>Thai</span></a></div>
-        <nav class="nav">
-          <a href="entree.html">Menu</a>
-          <a href="about.html">About Us</a>
-          <a href="reservation.html" class="btn">Book with us</a>
-        </nav>
-    </header>
-      <nav class="submenu">
-        <a href="entree.html">Entree</a>
-        <a href="noodle.html">Noodle</a>
-        <a href="curry.html">Curry</a>
-        <a href="rice.html">Rice</a>
-      </nav>
+  <header class="topbar">
+    <div class="logo"><a href="index.html" style="color:inherit;">Betong <span>Thai</span></a></div>
+    <nav class="nav">
+      <div class="dropdown">
+        <a href="entree.html" class="dropbtn">Menu ▾</a>
+        <div class="dropdown-content">
+          <a href="entree.html">Entree</a>
+          <a href="noodle.html">Noodle</a>
+          <a href="curry.html">Curry</a>
+          <a href="rice.html">Rice</a>
+        </div>
+      </div>
+      <a href="about.html">About Us</a>
+      <a href="reservation.html" class="btn">Book with us</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Curry</h1>
+    <p class="page-subtitle">Rich, aromatic curries served with steamed rice.</p>
+    <div class="menu-grid">
+
 
         <div class="menu-item"><div class="photo"><img src="Rice Images/Jasmine RIce.jpeg" alt="Jasmine Rice" /></div>
         <div class="info"><div class="name">Jasmine Rice</div><div class="price">$3.00</div>
@@ -54,6 +62,9 @@
         <div class="info"><div class="name">Pad Pak</div><div class="price">$3.00</div>
         <button class="add" onclick="addItem('Pad Pak')">Add +</button></div></div>
 
+    </div>
+  </main>
+
         <div class="price-table">
             <h3>Choose your protein (fried rice dishes)</h3>
             <table>
@@ -65,7 +76,7 @@
               <tr><td>Fish Fillet</td><td>$14.90</td></tr>
             </table>
           </div>
-        </main>
+        
         <footer class="site-footer">
           <div class="footer-grid">
             <div class="footer-col">
