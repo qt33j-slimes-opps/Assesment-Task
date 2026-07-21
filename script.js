@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-function getOrder() {
+function getOrder() { 
     try {
       var raw = localStorage.getItem("betong_order");
       return raw ? JSON.parse(raw) : [];
@@ -74,12 +74,12 @@ function getOrder() {
       list.innerHTML = "";
       if (order.length === 0) {
         var li = document.createElement("li");
-        li.textContent = "No items added yet — you can order in store.";
+        li.textContent = "No items added yet! You can order in store.";
         list.appendChild(li);
       } else {
         for (var i = 0; i < order.length; i++) {
           var item = document.createElement("li");
-          item.textContent = order[i].qty + "× " + order[i].name;
+          item.textContent = order[i].qty + "x " + order[i].name;
           list.appendChild(item);
         }
       }
