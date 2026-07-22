@@ -334,20 +334,20 @@ img {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px;
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
 }
 
-.gallery .tile {
+.gallery-item {
   background: linear-gradient(135deg, var(--red), var(--orange));
-  height: 160px;
-  border-radius: 8px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white);
-  font-size: 36px;
 }
 
 .notice {
