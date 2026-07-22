@@ -116,27 +116,28 @@ img {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--red) 0%, var(--orange) 100%);
-  color: var(--white);
-  padding: 60px 24px;
-  text-align: center;
   position: relative;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
 }
 
+
 .hero-home {
-  background-image: url('images/thai-food-banner.webp');
+  background-image: url("Thai Food Banner.webp");
   background-size: cover;
-  background-position: center;
-  min-height: 420px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(217, 74, 61, 0.82) 0%, rgba(255, 138, 61, 0.78) 100%);
+  background: rgba(222, 98, 55, 0.55);
   z-index: 1;
 }
 
